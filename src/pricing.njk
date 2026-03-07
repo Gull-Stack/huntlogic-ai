@@ -6,23 +6,29 @@ description: Choose the Hunt Logic AI plan that fits your hunting style. Free tr
 
 {% block content %}
 
+<!-- Hero Section -->
 <section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-angle"></div>
   <div class="container">
-    <div class="hero-content text-center" style="max-width: none;">
-      <h1>Choose Your Plan</h1>
-      <p class="text-large">Start free, upgrade when you're ready. All plans include AI-powered predictions.</p>
+    <div class="hero-content" style="max-width: none; text-align: center;">
+      <span class="hero-label">Pricing</span>
+      <h1>Choose Your <span>Plan</span></h1>
+      <p class="text-large" style="max-width: 600px; margin: 0 auto;">Start free, upgrade when you're ready. All plans include AI-powered predictions.</p>
     </div>
   </div>
 </section>
 
-<section>
+<!-- Pricing Grid -->
+<section class="section-white">
   <div class="container">
     <div class="pricing-grid">
       <!-- Free Tier -->
-      <div class="pricing-card">
+      <div class="pricing-card slide-up stagger-1">
         <h3>Free</h3>
         <div class="pricing-price">$0<span>/month</span></div>
-        <p style="text-align: center; margin-bottom: 2rem;">Perfect for trying Hunt Logic AI</p>
+        <p class="pricing-description">Perfect for trying Hunt Logic AI</p>
         <ul class="pricing-features">
           <li>5 trail camera uploads/month</li>
           <li>Basic weather forecasts</li>
@@ -30,15 +36,15 @@ description: Choose the Hunt Logic AI plan that fits your hunting style. Free tr
           <li>Community access</li>
           <li>Mobile & web app access</li>
         </ul>
-        <a href="/contact/" class="btn btn-secondary" style="width: 100%; margin-top: 2rem;">Start Free</a>
+        <a href="/contact/" class="btn btn-dark">Start Free</a>
       </div>
 
       <!-- Premium Tier (Featured) -->
-      <div class="pricing-card featured">
-        <div style="background: var(--hunter-accent); color: var(--white); text-align: center; padding: 0.5rem; margin: -2rem -2rem 1.5rem; border-radius: var(--radius-lg) var(--radius-lg) 0 0; font-weight: 600;">MOST POPULAR</div>
-        <h3>Premium</h3>
+      <div class="pricing-card featured slide-up stagger-2">
+        <div class="pricing-badge">Most Popular</div>
+        <h3 style="margin-top: 24px;">Premium</h3>
         <div class="pricing-price">$29.99<span>/month</span></div>
-        <p style="text-align: center; margin-bottom: 2rem;">For serious hunters</p>
+        <p class="pricing-description">For serious hunters</p>
         <ul class="pricing-features">
           <li>Unlimited trail camera analysis</li>
           <li>AI-powered predictions</li>
@@ -49,14 +55,14 @@ description: Choose the Hunt Logic AI plan that fits your hunting style. Free tr
           <li>Smart hunting alerts</li>
           <li>Priority support</li>
         </ul>
-        <a href="/contact/" class="btn btn-primary" style="width: 100%; margin-top: 2rem;">Start 7-Day Trial</a>
+        <a href="/contact/" class="btn btn-primary">Start 7-Day Trial</a>
       </div>
 
       <!-- Pro Tier -->
-      <div class="pricing-card">
+      <div class="pricing-card slide-up stagger-3">
         <h3>Pro</h3>
         <div class="pricing-price">$59.99<span>/month</span></div>
-        <p style="text-align: center; margin-bottom: 2rem;">For guides & power users</p>
+        <p class="pricing-description">For guides & power users</p>
         <ul class="pricing-features">
           <li>Everything in Premium</li>
           <li>Group management (up to 10 users)</li>
@@ -66,43 +72,74 @@ description: Choose the Hunt Logic AI plan that fits your hunting style. Free tr
           <li>Dedicated account manager</li>
           <li>Advanced analytics & exports</li>
         </ul>
-        <a href="/contact/" class="btn btn-secondary" style="width: 100%; margin-top: 2rem;">Contact Sales</a>
+        <a href="/contact/" class="btn btn-dark">Contact Sales</a>
       </div>
     </div>
 
     <div class="text-center mt-3">
-      <p style="color: var(--medium-gray);">All plans include iOS, Android, and web access. Cancel anytime. No contracts.</p>
+      <p class="text-muted">All plans include iOS, Android, and web access. Cancel anytime. No contracts.</p>
     </div>
   </div>
 </section>
 
-<section class="bg-light">
-  <div class="container" style="max-width: 900px;">
-    <h2 class="text-center mb-3">Frequently Asked Questions</h2>
-
-    <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.25rem;">Can I cancel anytime?</h3>
-      <p>Yes. Cancel your subscription anytime from your account settings. No contracts, no cancellation fees.</p>
+<!-- FAQ Section -->
+<section class="section-sand">
+  <div class="container-narrow">
+    <div class="section-header centered fade-in">
+      <span class="section-label">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
     </div>
 
-    <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.25rem;">What payment methods do you accept?</h3>
-      <p>We accept all major credit cards (Visa, Mastercard, American Express, Discover) and PayPal. Subscriptions are billed monthly or annually.</p>
-    </div>
+    <div class="faq-list">
+      <div class="faq-item slide-up stagger-1">
+        <div class="faq-question">
+          <h3>Can I cancel anytime?</h3>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Yes. Cancel your subscription anytime from your account settings. No contracts, no cancellation fees.</p>
+          </div>
+        </div>
+      </div>
 
-    <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.25rem;">Is there a free trial?</h3>
-      <p>The Free plan is available forever with limited features. Premium and Pro plans include a 7-day free trial - no credit card required to start.</p>
-    </div>
+      <div class="faq-item slide-up stagger-2">
+        <div class="faq-question">
+          <h3>What payment methods do you accept?</h3>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>We accept all major credit cards (Visa, Mastercard, American Express, Discover) and PayPal. Subscriptions are billed monthly or annually.</p>
+          </div>
+        </div>
+      </div>
 
-    <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg);">
-      <h3 style="font-size: 1.25rem;">Can I upgrade or downgrade later?</h3>
-      <p>Absolutely. Change your plan anytime. Upgrades take effect immediately, downgrades take effect at the end of your current billing cycle.</p>
+      <div class="faq-item slide-up stagger-3">
+        <div class="faq-question">
+          <h3>Is there a free trial?</h3>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>The Free plan is available forever with limited features. Premium and Pro plans include a 7-day free trial - no credit card required to start.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item slide-up stagger-4">
+        <div class="faq-question">
+          <h3>Can I upgrade or downgrade later?</h3>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Absolutely. Change your plan anytime. Upgrades take effect immediately, downgrades take effect at the end of your current billing cycle.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="cta-section">
+<!-- CTA Section -->
+<section class="cta-section from-sand">
   <div class="container">
     <h2>Start Hunting Smarter Today</h2>
     <p>Join 50,000+ hunters using AI to increase their success. Try Premium free for 7 days.</p>
