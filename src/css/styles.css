@@ -2170,3 +2170,24 @@ section {
     padding: 20pt 0;
   }
 }
+
+/* Feature Card Images (replaces emoji icons) */
+.feature-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin: -24px -24px 20px -24px;
+  width: calc(100% + 48px);
+}
+
+.feature-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.feature-card:hover .feature-img img {
+  transform: scale(1.05);
+}
