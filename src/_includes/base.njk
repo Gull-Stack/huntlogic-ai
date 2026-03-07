@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | {{ site.name }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="{{ site.name }}">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ title }} | {{ site.name }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/images/og-default.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="{{ site.name }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }} | {{ site.name }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/images/og-default.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/images/logos/favicon.png">
+  <link rel="apple-touch-icon" href="/images/logos/webclip.png">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gaId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.gaId }}');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Page-specific schema (injected by each page) -->
+  {% block schema %}{% endblock %}
+
+  <!-- Organization Schema (global — every page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "{{ site.url }}/#organization",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "email": "{{ site.email }}",
+    "telephone": "{{ site.phone }}",
+    "description": "{{ site.description }}",
+    "applicationCategory": "Outdoor Recreation",
+    "operatingSystem": "iOS, Android, Web",
+    "foundingDate": "{{ site.founded }}",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "2847"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free tier with premium subscriptions available"
+    },
+    "featureList": [
+      "AI-powered trail camera analysis",
+      "Weather pattern prediction",
+      "Game movement analytics",
+      "GPS mapping and navigation",
+      "Hunting success tracking"
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList (if breadcrumbs defined in frontmatter) -->
+  {% if breadcrumbs %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}" }
+      {% for crumb in breadcrumbs %},
+      { "@type": "ListItem", "position": {{ loop.index + 1 }}, "name": "{{ crumb.name }}", "item": "{{ site.url }}{{ crumb.url }}" }
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  {% include "header.njk" %}
+  <main id="main">
+    {% block content %}{% endblock %}
+  </main>
+  {% include "footer.njk" %}
+  <script src="/js/main.js"></script>
+  <script src="/js/ga4-events.js"></script>
+</body>
+</html>

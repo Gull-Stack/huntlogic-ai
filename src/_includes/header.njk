@@ -1,0 +1,49 @@
+<header class="header" id="header">
+  <div class="container header-container">
+    <a href="/" class="logo-link" aria-label="Hunt Logic AI Home">
+      <img src="/images/logos/logo-horizontal.svg" alt="Hunt Logic AI" class="logo" width="200" height="50">
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">
+            Technology
+            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="/technology/">AI Technology Overview</a></li>
+            <li><a href="/trail-camera-ai/">Trail Camera AI</a></li>
+            <li><a href="/hunting-tools/">Hunting Tools</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="/success-stories/" class="nav-link {% if '/success-stories/' in page.url %}active{% endif %}">Success Stories</a>
+        </li>
+        <li class="nav-item">
+          <a href="/guides/" class="nav-link {% if '/guides/' in page.url %}active{% endif %}">Guides</a>
+        </li>
+        <li class="nav-item">
+          <a href="/pricing/" class="nav-link {% if '/pricing/' in page.url %}active{% endif %}">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about/" class="nav-link {% if '/about/' in page.url %}active{% endif %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact/" class="nav-link {% if '/contact/' in page.url %}active{% endif %}">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="/pricing/" class="btn btn-primary header-cta">Start Free Trial</a>
+
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+</header>

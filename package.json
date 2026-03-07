@@ -1,0 +1,16 @@
+{
+  "name": "huntlogic-ai",
+  "version": "1.0.0",
+  "description": "Hunt Logic AI - Smart outdoor technology platform for hunters",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": ["hunting", "AI", "trail-camera", "outdoor", "technology"],
+  "author": "Hunt Logic AI",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

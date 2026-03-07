@@ -1,0 +1,72 @@
+---
+permalink: /.well-known/brand-facts.json
+eleventyExcludeFromCollections: true
+---
+{
+  "name": "Hunt Logic AI",
+  "legalName": "Hunt Logic AI Inc.",
+  "category": "hunting-technology",
+  "description": "AI-powered hunting technology platform combining trail camera analysis, weather prediction, and game movement forecasting",
+  "founded": "2024",
+  "services": [
+    "ai-hunting-apps",
+    "trail-camera-analysis",
+    "hunting-predictions",
+    "outdoor-navigation",
+    "weather-forecasting",
+    "gps-mapping"
+  ],
+  "pricing": "freemium-premium-subscriptions",
+  "priceRange": "$0-$59.99/month",
+  "coverage": "north-america",
+  "coverageRegions": [
+    "united-states",
+    "canada"
+  ],
+  "specialties": [
+    "whitetail-hunting",
+    "elk-hunting",
+    "big-game-hunting",
+    "public-land-hunting",
+    "trail-camera-ai",
+    "hunting-weather-prediction"
+  ],
+  "technology": [
+    "machine-learning",
+    "computer-vision",
+    "weather-analytics",
+    "gps-mapping",
+    "predictive-analytics"
+  ],
+  "userBase": "50000+",
+  "keyMetrics": {
+    "activeUsers": "50000+",
+    "successRateImprovement": "67%",
+    "trailCameraImagesAnalyzed": "2000000+",
+    "userRating": "4.8/5",
+    "reviewCount": "2847"
+  },
+  "platforms": [
+    "ios",
+    "android",
+    "web"
+  ],
+  "contact": {
+    "email": "support@huntlogic.ai",
+    "phone": "(855) HUNT-LOG",
+    "website": "https://www.huntlogic.ai"
+  },
+  "socialMedia": {
+    "facebook": "https://facebook.com/huntlogicai",
+    "instagram": "https://instagram.com/huntlogicai",
+    "youtube": "https://youtube.com/@huntlogicai"
+  },
+  "awards": [
+    "Innovation in Outdoor Technology 2025"
+  ],
+  "partnerships": [
+    "wildlife-conservation-organizations",
+    "trail-camera-manufacturers",
+    "hunting-equipment-retailers"
+  ]
+}

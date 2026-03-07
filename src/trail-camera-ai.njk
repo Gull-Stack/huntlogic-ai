@@ -1,0 +1,148 @@
+---
+layout: base.njk
+title: Trail Camera AI | Automatic Game Recognition & Analysis
+description: AI-powered trail camera analysis automatically identifies deer, elk, and game. Buck scoring, herd tracking, and behavior prediction. Upload photos, get instant insights.
+breadcrumbs:
+  - name: Technology
+    url: /technology/
+  - name: Trail Camera AI
+    url: /trail-camera-ai/
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Hunt Logic Trail Camera AI",
+  "description": "AI-powered trail camera analysis for automatic game recognition and behavior prediction",
+  "brand": {
+    "@type": "Brand",
+    "name": "Hunt Logic AI"
+  },
+  "category": "Hunting Technology",
+  "offers": {
+    "@type": "Offer",
+    "price": "29.99",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "{{ site.url }}/pricing/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1823"
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Trail Camera AI: Stop Sorting Photos Manually</h1>
+      <p class="text-large">Upload your trail camera photos and let AI do the work. Automatic game recognition, buck scoring, herd tracking, and behavior prediction in seconds.</p>
+      <div class="hero-cta">
+        <a href="/pricing/" class="btn btn-primary btn-large">Start Free Trial</a>
+        <a href="/success-stories/" class="btn btn-secondary btn-large">See Results</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="text-center mb-3">What Trail Camera AI Does for You</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🦌</div>
+        <h3>Species Recognition</h3>
+        <p>Automatically identifies whitetail deer, mule deer, elk, turkey, bear, coyote, and 15+ other species. Filters photos by species in one click.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📏</div>
+        <h3>Buck Scoring</h3>
+        <p>AI estimates Boone & Crockett scores from trail camera photos. Track bucks over time and identify trophy potential.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👥</div>
+        <h3>Herd Analytics</h3>
+        <p>Counts deer in each photo, identifies doe-to-buck ratios, tracks fawn survival rates, and monitors herd health.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏰</div>
+        <h3>Activity Patterns</h3>
+        <p>Analyzes what times game is most active at each camera location. Predicts optimal hunting times based on photo timestamps.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📸</div>
+        <h3>Camera Integration</h3>
+        <p>Works with Reconyx, Bushnell, Stealth Cam, Moultrie, and 20+ trail camera brands. Upload via app, web, or automatic cellular sync.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Smart Alerts</h3>
+        <p>Get notified when a mature buck appears on camera or when game activity increases at your hunting spots.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light">
+  <div class="container" style="max-width: 900px;">
+    <h2 class="text-center mb-3">How It Works</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <h3>Upload Photos</h3>
+        <p>Drag and drop trail camera images or connect your cellular camera for automatic uploads.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <h3>AI Analysis</h3>
+        <p>Our computer vision identifies species, counts animals, scores bucks, and extracts behavior data.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">03</div>
+        <h3>Get Insights</h3>
+        <p>View organized galleries, analytics dashboards, and hunting recommendations based on your camera data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="text-center mb-3">Features Premium Hunters Love</h2>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="background: var(--hunter-sand); border-left: 4px solid var(--hunter-accent); padding: 2rem; border-radius: var(--radius); margin-bottom: 1.5rem;">
+        <h3>Buck Identification Across Cameras</h3>
+        <p>AI recognizes individual bucks across multiple camera locations by antler characteristics. Track which bucks are visiting which spots and when.</p>
+      </div>
+      <div style="background: var(--hunter-sand); border-left: 4px solid var(--hunter-accent); padding: 2rem; border-radius: var(--radius); margin-bottom: 1.5rem;">
+        <h3>Seasonal Pattern Analysis</h3>
+        <p>Compare this year's trail camera data to previous seasons. Identify shifts in game movement and adjust your strategy accordingly.</p>
+      </div>
+      <div style="background: var(--hunter-sand); border-left: 4px solid var(--hunter-accent); padding: 2rem; border-radius: var(--radius); margin-bottom: 1.5rem;">
+        <h3>Velvet-to-Hard Horn Transition Tracking</h3>
+        <p>Monitor when bucks shed velvet and track antler growth progression throughout summer and fall.</p>
+      </div>
+      <div style="background: var(--hunter-sand); border-left: 4px solid var(--hunter-accent); padding: 2rem; border-radius: var(--radius);">
+        <h3>Export and Share</h3>
+        <p>Generate PDF reports of your trail camera data. Share specific buck sightings with hunting partners while keeping your locations private.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Stop Wasting Time Sorting Trail Camera Photos</h2>
+    <p>Let AI handle the grunt work while you focus on hunting. Start analyzing your trail camera photos today.</p>
+    <a href="/pricing/" class="btn btn-primary btn-large">Start Free Trial - 5 Photos/Month</a>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{
+  "name": "Hunt Logic AI",
+  "tagline": "AI-Powered Hunting Success",
+  "description": "Increase your hunting success by 67% with smart trail camera analysis, weather prediction, and game movement patterns. Hunt Logic AI is the ultimate outdoor technology platform for serious hunters.",
+  "url": "https://www.huntlogic.ai",
+  "email": "support@huntlogic.ai",
+  "phone": "(855) HUNT-LOG",
+  "gaId": "G-XXXXXXXXXX",
+  "founded": "2024",
+  "users": "50,000+",
+  "successRate": "67% improvement",
+  "coverage": "North America hunting zones",
+  "features": [
+    "Trail Camera AI",
+    "Weather Prediction",
+    "Game Movement Analytics",
+    "GPS Mapping"
+  ],
+  "pricing": {
+    "free": {
+      "name": "Free",
+      "price": "$0",
+      "features": [
+        "Basic weather forecasts",
+        "5 trail camera uploads/month",
+        "Community access",
+        "Basic GPS tracking"
+      ]
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "$29.99/mo",
+      "features": [
+        "AI-powered predictions",
+        "Unlimited trail camera analysis",
+        "Advanced weather patterns",
+        "Game movement forecasting",
+        "Success rate tracking",
+        "Priority support"
+      ]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "$59.99/mo",
+      "features": [
+        "Everything in Premium",
+        "Guide features & group management",
+        "White-label options",
+        "API access",
+        "Dedicated account manager",
+        "Custom integrations"
+      ]
+    }
+  },
+  "socials": {
+    "facebook": "https://facebook.com/huntlogicai",
+    "instagram": "https://instagram.com/huntlogicai",
+    "youtube": "https://youtube.com/@huntlogicai"
+  }
+}

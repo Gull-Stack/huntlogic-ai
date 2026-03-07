@@ -1,0 +1,105 @@
+---
+layout: base.njk
+title: Contact Hunt Logic AI | Get in Touch
+description: Contact Hunt Logic AI for support, sales inquiries, or demo requests. We're here to help you hunt smarter.
+---
+
+{% block content %}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Get in Touch</h1>
+      <p class="text-large">Have questions? Want a demo? We're here to help you get started with Hunt Logic AI.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; max-width: 1000px; margin: 0 auto;">
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      <!-- Contact Form -->
+      <div>
+        <h2>Send Us a Message</h2>
+        <form id="contact-form" style="margin-top: 2rem;">
+          <div style="margin-bottom: 1.5rem;">
+            <label for="name" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Name</label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-gray); border-radius: var(--radius); font-family: var(--font-body);">
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Email</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-gray); border-radius: var(--radius); font-family: var(--font-body);">
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="phone" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-gray); border-radius: var(--radius); font-family: var(--font-body);">
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="subject" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Subject</label>
+            <select id="subject" name="subject" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-gray); border-radius: var(--radius); font-family: var(--font-body);">
+              <option value="">Select a topic...</option>
+              <option value="demo">Request a Demo</option>
+              <option value="sales">Sales Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="partnership">Partnership Opportunity</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="message" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Message</label>
+            <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-gray); border-radius: var(--radius); font-family: var(--font-body); resize: vertical;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h2>Contact Information</h2>
+        <div style="margin-top: 2rem;">
+          <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Phone</h3>
+            <p><a href="tel:{{ site.phone }}" style="color: var(--hunter-primary); font-size: 1.25rem; font-weight: 600;">{{ site.phone }}</a></p>
+            <p style="color: var(--medium-gray); font-size: 0.875rem;">Monday - Friday, 8am - 6pm MST</p>
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Email</h3>
+            <p><a href="mailto:{{ site.email }}" style="color: var(--hunter-primary); font-size: 1.25rem; font-weight: 600;">{{ site.email }}</a></p>
+            <p style="color: var(--medium-gray); font-size: 0.875rem;">We respond within 24 hours</p>
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Quick Links</h3>
+            <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 0.5rem;"><a href="/pricing/">Pricing & Plans</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="/technology/">Technology Overview</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="/success-stories/">Success Stories</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="/guides/">Hunting Guides</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Follow Us</h3>
+            <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+              <a href="{{ site.socials.facebook }}" style="width: 48px; height: 48px; background: var(--hunter-primary); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center;">FB</a>
+              <a href="{{ site.socials.instagram }}" style="width: 48px; height: 48px; background: var(--hunter-primary); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center;">IG</a>
+              <a href="{{ site.socials.youtube }}" style="width: 48px; height: 48px; background: var(--hunter-primary); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center;">YT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
