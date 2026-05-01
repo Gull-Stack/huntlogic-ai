@@ -395,9 +395,12 @@ section {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 100%;
   gap: 32px;
+}
+
+.header-container .nav {
+  margin-left: auto;
 }
 
 .logo-link {
@@ -583,6 +586,7 @@ section {
   border: none;
   cursor: pointer;
   padding: 10px;
+  margin-left: auto;
 }
 
 @media (min-width: 1024px) {

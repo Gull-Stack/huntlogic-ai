@@ -1,20 +1,20 @@
 {
-  "name": "Hunt Logic AI",
-  "tagline": "AI-Powered Hunting Success",
-  "description": "Increase your hunting success by 67% with smart trail camera analysis, weather prediction, and game movement patterns. Hunt Logic AI is the ultimate outdoor technology platform for serious hunters.",
+  "name": "HuntLogic",
+  "tagline": "Your AI Hunt Advisor",
+  "description": "HuntLogic turns 50 states of messy hunting regulations, draw odds, and application deadlines into one personalized playbook — so you spend less time on PDFs and more time in the field.",
   "url": "https://www.huntlogic.ai",
   "email": "support@huntlogic.ai",
   "phone": "(855) HUNT-LOG",
   "gaId": "G-XXXXXXXXXX",
   "founded": "2024",
-  "users": "50,000+",
-  "successRate": "67% improvement",
-  "coverage": "North America hunting zones",
+  "coverage": "All 50 U.S. states",
   "features": [
-    "Trail Camera AI",
-    "Weather Prediction",
-    "Game Movement Analytics",
-    "GPS Mapping"
+    "Goal-Based Planning",
+    "Deadlines & Points Tracking",
+    "Draw Odds Translated",
+    "Unified Hunter Profile",
+    "Opportunity Alerts",
+    "Concierge Applications (coming soon)"
   ],
   "pricing": {
     "free": {
